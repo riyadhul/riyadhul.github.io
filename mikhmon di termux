@@ -1,0 +1,5 @@
+apt update && apt upgrade -y
+apt install curl
+curl -o install-mikhmon https://riyadhul.github.io/install-mikhmon.txt
+chmod +x install-mikhmon
+./install-mikhmon
