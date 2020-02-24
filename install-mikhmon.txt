@@ -1,6 +1,6 @@
 #bin/bash
 apt install git php -y
-git clone https://github.com/riyadhul/mikhmonv3.git
+git clone https://github.com/riyadhul/riyadhul.github.io.git
 cat >start-mikhmon <<EOL
 #bin/bash
 cd mikhmonv3
