@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MIKHMON -MikroTik Hotspot Monitor-</title>
+	<meta name="description" content="Mikrotik Hotspot Monitor" />
+	<meta name="keywords" content="mikhmon,mikrotik,voucher,routeros,api mikrotik,rtrwnet, rtrw/net,hotspot" />
+	<meta http-equiv="expires" content="0">
+	<meta name="robots" content="index, follow" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/mikhmon-ui-light.css">
+	<link rel="icon" href="img/favicon.png" />
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+
+<body style="background: url('./img/textures.png');">
+	<div class="container">
+		<div class="row">
+			<div class="col-10 mr-a" style="float:none;">
+				<div class="card bg-light box-shadow radius-3">
+					<div class="row">
+						<div class="col-12">
+							<div class="radius-t-3 text-center bg-dark"><b style="font-size: 50px; text-shadow: 1px 1px 4px #424242;" class="text-light">MIKHMON</b></div>
+						</div>
+						<div id="menu" class="col-12" style="font-size:14px;">
+							<script src="./js/menu.js"></script>
+						</div>
+						
+						<div class="col-4">
+							<div class="row">
+								<div class="col-12">
+									<div class="card">
+										<div class="card-header">
+											<h3><i class="fa fa-list"></i> Fitur Umum</h3>
+										</div>
+										<div class="card-body">
+											<p>
+												<ol>
+													<li>Add, edit, remove user hotspot.</li>
+													<li>Ganerate user hotspot.</li>
+													<li>Add, edit, remove user profile.</li>
+													<li>Cetak voucher.</li>
+													<li>Quick Print. Cetak voucher ke thermal printer via bluetooth. <a href="./videos.html">Cek Video</a></li>
+													<li>Report penjualan.</li>
+													<li>Custom template voucher.</li>
+													<li>Multi router.</li>
+												</ol>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="card">
+										<div class="card-header">
+											<h3><i class="fa fa-info-circle"></i> Minimum Requirement</h3>
+										</div>
+										<div class="card-body">
+											<p>
+												Router Board.
+												<ol>
+													<li>Rourer Board MikroTik.</li>
+													<li>Clock speed CPU 650 MHz</li>
+													<li>Router OS v6.3x.x</li>
+												</ol>
+												Webserver.
+												<ol>
+													<li>PC, SBC atau Router.</li>
+													<li>Bisa menjalankan webserver Apache/NGINX + PHP</li>
+													<li>PHP v5.4.</li>
+												</ol>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div align="center" class="col-12">
+									<div class="card" style="background: transparent;">
+										<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+										<!-- ads1 -->
+										<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1716315177239884" data-ad-slot="9229714223"
+										 data-ad-format="auto" data-full-width-responsive="true"></ins>
+										<script>
+											(adsbygoogle = window.adsbygoogle || []).push({});
+										</script>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-4">
+							<div class="row">
+								<div class="col-12">
+									<div class="card">
+										<div class="card-header">
+											<h3><i class="fa fa-user-plus"></i> Add User Hotspot</h3>
+										</div>
+										<div class="card-body">
+											<p>
+												Anda bisa menambahakan username dan password hotspot secara manual.<br>
+												Bisa juga ditambahakan batasan waktu dan data (Time Limit, Data Limit).<br>
+												Time Limit = Limit Uptime<br>
+												Data limit = Limit Bytes Total<br>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="card">
+										<div class="card-header">
+											<h3><i class="fa fa-user-plus"></i> Generate User Hotspot</h3>
+										</div>
+										<div class="card-body">
+											<p>
+												Anda bisa membuat user hotspot secara otomatis sesuai dengan jumlah yang diinginkan (max 500 user dengan
+												panjang username 8 karakter, untuk sekali generate dan bisa diulangi).<br>
+												Berikut pilihan mede user pada saat generate.
+												<ul>
+													<li>Generate Username & Password.</li>
+													<li>Generate Username = Password.</li>
+												</ul>
+												Selain itu bisa juga menambahkan Prefix, Time Limit dan Data Limit. Serta penambahan comment.
+											</p>
+										</div>
+									</div>
+								</div>
+								<div align="center" class="col-12">
+									<div class="card" style="background: transparent;">
+										<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+										<!-- ads3 -->
+										<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1716315177239884" data-ad-slot="4095402072"
+										 data-ad-format="auto" data-full-width-responsive="true"></ins>
+										<script>
+											(adsbygoogle = window.adsbygoogle || []).push({});
+										</script>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-4">
+							<div class="row">
+								<div class="col-12">
+									<div class="card">
+										<div class="card-header">
+											<h3><i class="fa fa-book"></i> User Profile</h3>
+										</div>
+										<div class="card-body">
+											<p>
+												Anda bisa membuat user profile hotspot mikrotik dengan menambahkan validity dan dua pilihan mode expired
+												Remove dan Notice.
+												<ul>
+													<li>Remove / Remove & Record.</li>
+													<li>Notice / Notice & Record.</li>
+												</ul>
+												Selain itu juga ada pilihan yang harus diisi sebagai berikut, Price dan User Lock.<br>
+												*Nama user profile tidak bisa menggunakan spasi.
+											</p>
+										</div>
+									</div>
+								</div>
+								
+								<div class="col-12">
+									<div class="card">
+										<div class="card-header">
+											<h3><i class="fa fa-book"></i> Detail User Profile</h3>
+										</div>
+										<div class="card-body">
+											<p>Validity : Masa aktif/berlaku user hotspot.</p>
+											<p>
+												Expired Mode : Remove, Notice, Remove & Record, Notice & Record.
+												<ul>
+													<li>Remove : User akan dihapus ketika sudah expired.</li>
+													<li>Notice : User tidah dihapus dan akan mendapatkan notifikasi setelah user expired.</li>
+													<li>Record : Menyimpan data harga tiap user yang login. Untuk menghitung total penjualan user hotspot dan
+														ditampilkan dalam laporan penjualan. </li>
+												</ul>
+											</p>
+											<p>Lock User : Username/Kode voucher hanya bisa digunakan pada 1 perangkat saja.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div>
+						<div align="center" class="col-12">
+							<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+							<!-- ads2 -->
+							<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1716315177239884" data-ad-slot="2636756848"
+							 data-ad-format="auto" data-full-width-responsive="true"></ins>
+							<script>
+								(adsbygoogle = window.adsbygoogle || []).push({});
+							</script>
+						</div>
+					</div>
+					</div>
+					
+					<div class="card-footer bg-dark">
+						Copyright © 2018 Laksamadi Guko
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+
+</body>
+
+</html>

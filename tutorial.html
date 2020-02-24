@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MIKHMON -MikroTik Hotspot Monitor-</title>
+	<meta name="description" content="Mikrotik Hotspot Monitor" />
+	<meta name="keywords" content="mikhmon,mikrotik,voucher,routeros,api mikrotik,rtrwnet, rtrw/net,hotspot" />
+	<meta http-equiv="expires" content="0">
+	<meta name="robots" content="index, follow" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/mikhmon-ui-light.css">
+	<link rel="icon" href="img/favicon.png" />
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+
+<body style="background: url('./img/textures.png');">
+	<div class="container">
+		<div class="row">
+			<div class="col-10 mr-a" style="float:none;">
+				<div class="card bg-light box-shadow radius-3">
+					<div class="row">
+						<div class="col-12">
+							<div class="radius-t-3 text-center bg-dark"><b style="font-size: 50px; text-shadow: 1px 1px 4px #424242;" class="text-light">MIKHMON</b></div>
+						</div>
+						<div id="menu" class="col-12" style="font-size:14px;">
+							<script src="./js/menu.js"></script>
+						</div>
+						<div class="col-6">
+							<div class="row">
+								<div class="col-12">
+									<div class="card">
+										<div class="card-header">
+											<h3><i class="fa fa-book"></i> Konfigurasi di MikroTik</h3>
+										</div>
+										<div class="card-body">
+											<ol>
+												<li>Pastikan port API MikroTik sudah aktif [ip->services].<br>
+													<a href="./img/api.png" target="_blank" title="MikroTik API"><img src="./img/api.png" class="img2"></a>
+												</li>
+												<li>Setting jam dan tanggal dengan menambahkan NTP Server [system->sntp client].<br>
+													<a href="./img/sntp.PNG" target="_blank" title="MikroTik SNTP"><img src="./img/sntp.PNG" class="img2"></a></li>
+												<li>Sesuaikan zona waktu masing-masing [system->clock].<br>
+													<a href="./img/clock.PNG" target="_blank" title="MikroTik Clock"><img src="./img/clock.PNG" class="img2"></a></li>
+											</ol>
+										</div>
+									</div>
+								</div>
+								<div align="center" class="col-12">
+									<div class="card" style="background: transparent;">
+										<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+										<!-- ads1 -->
+										<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1716315177239884" data-ad-slot="9229714223"
+										 data-ad-format="auto" data-full-width-responsive="true"></ins>
+										<script>
+											(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="card">
+										<div class="card-header">
+											<h3><i class="fa fa-book"></i> Mikhmon + Webserver</h3>
+										</div>
+										<div class="card-body">
+											<div class="mr-b-5">
+												<h3>Tutorial Singkat Mikhmon + Webserver</h3>
+												<ol>
+													<li>Download dan extract [mikhmonv3ws.zip].</li>
+													<li>Jalankan [MikhmonServer] / Run as administrator.</li>
+													<li>Klik Open Mikhmon atau buka http://127.0.0.1 di browser (disarankan menggunakan Google Chrome).</li>
+													<li>Login menggunakan user password default [user:mikhmon pass:1234].</li>
+													<li>Klik Add Router</li>
+													<li>Isikan IP, user dan password MikroTik, kemudian save dan klik Connect untuk tes koneksi ke MikroTik.
+														<br>[IP bisa menggunakan ip yang di ether1, cek dari Winbox : ip->address->ether1].</li>
+													<li>Buat User Profile baru, atau update User Profile lama dengan memilih Expired Mode. Sesuikan dengan
+														kebutuhan.</li>
+													<li>User Profile sudah siap, selanjutnya sudah bisa add user atau generate user dan cetak voucher.</li>
+												</ol>
+												<a class="btn bg-blue pd-10" href="./videos.html"> <i
+													 class="fa fa-film"></i> Panduan Video</a><br>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="card">
+										<div class="card-header">
+											<h3><i class="fa fa-book"></i> Panduan Install Mikhmon di Android via Termux</h3>
+										</div>
+										<div class="card-body">
+											<div class="mr-b-5">
+												<p>Install Trmux <a href="https://play.google.com/store/apps/details?id=com.termux&hl=en">PlayStore</a><br>
+													Munculkan CTRL di Termux : Tekan volume up + q</p>
+												<div class="box-bordered pd-5">
+													<ul style="list-style: none; padding:0; ">
+														<li></li>
+														<li>apt update && apt upgrade -y</li>
+														<li>apt install curl</li>
+														<li>curl -o install-mikhmon https://laksa19.github.io/install-mikhmon.txt</li>
+														<li>chmod +x install-mikhmon</li>
+														<li>./install-mikhmon</li>
+													</ul>
+												</div>
+												Buka url <a class="text-blue" href="http://127.0.0.1:8080">http://127.0.0.1:8080</a> di browser Anda.<br>
+												<div class="box-bordered pd-5 mt-b-10">
+													Command
+													<ul style="list-style: none; padding:0; ">
+														<li>Start Mikhmon : ./start-mikhmon﻿</li>
+														<li>Update Mikhmon : ./update-mikhmon</li>
+														<li>Remove Mikhmon : ./remove-mikhmon</li>
+													</ul>
+
+												</div><br>
+												<a class="btn bg-blue pd-10 bm-t-10" href="./videos.html"> <i class="fa fa-film"></i>
+													Panduan Video</a><br>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div align="center" class="col-12">
+									<div class="card" style="background: transparent;">
+										<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+										<!-- ads2 -->
+										<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1716315177239884" data-ad-slot="2636756848"
+										 data-ad-format="auto" data-full-width-responsive="true"></ins>
+										<script>
+											(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+									</div>
+								</div>
+								<!--<div class="col-12">
+					<div class="card">
+						<div class="card-header">
+							<h3><i class="fa fa-book"></i> Panduan Install Mikhmon di Ubuntu.</h3>
+						</div>
+						<div class="card-body">
+							<div class="mr-b-5">
+				  				<div class="box-bordered pd-5">
+				  					<ul style="list-style: none; padding:0; ">
+				  						<li>su</li>
+										<li>apt install curl</li>
+										<li>curl -o install-mikhmon https://laksa19.github.io/install-mikhmon.txt</li>
+										<li>chmod +x install-mikhmon</li>
+									<li>./install-mikhmon</li>
+								</ul>
+								</div>
+									Buka url <a class="text-blue" href="http://127.0.0.1:8080">http://127.0.0.1:8080</a> di browser Anda.<br>
+									Untuk menjalankan Mikhmon selanjutnya, tinggal eksekusi perintah
+								<div class="box-bordered pd-5">
+									./start-mikhmon﻿
+								</div>
+				  			</div>
+				  		</div>
+				  	</div>
+				</div>-->
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="row">
+								<div class="col-12">
+									<div class="card">
+										<div class="card-header">
+											<h3><i class="fa fa-book"></i> Pembuatan User Hotspot</h3>
+										</div>
+										<div class="card-body">
+											<p>
+												Validity = Masa Aktif, waktu akan terus berjalan dipakai mautun tidak dipakai sejak login.<br>
+												Time lImit = Durasi, batas penggunaan semalama masa aktif, waktunya akan berhenti jika user logout.<br>
+												Jika ingin membuat user dengan validity 30 hari, sukup buat user profile dengan validity 30d. Kemudian
+												generate adatu add user dengan user profile tersebut. Time limit tidak perlu diisi.<br>
+												Pembuatan user dengan validity dan time limit idealnya time limit lebih kecil dari validity.<br> Contoh
+												membuat user dengan time limit 7 hari dan masa aktif 30 hari, maka bisa add user adau generate user dengan
+												time limit 7d dan memilih user profile yang memiliki validity 30d.
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="card">
+										<div class="card-header">
+											<h3><i class="fa fa-book"></i> Print Voucher</h3>
+										</div>
+										<div class="card-body">
+											<p>
+												Sistem print voucher Mikhmon menggunakan 2 kategori.<br>
+												1. Berdasarkan nama untuk print satu voucher.<br>
+												2. Berdasarkan comment kode generate untuk print lebih dari satu voucher.<br>
+
+												Untuk print berdasarkan comment kode generate, user yang pernah login dan logout tidak akan ikut diprint,
+												walaupun masih dalam satu kelompok kode generate.
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="card">
+										<div class="card-header">
+											<h3><i class="fa fa-book"></i> Panduan Template Login Hotspot</h3>
+										</div>
+										<div class="card-body">
+											<p>
+												<h3>Untuk template hotspot3 dan hotspot4.</h3>
+												Pernyesuaian pada file data.js
+												<div>
+													<script class="mr-b-5" style="display: block;" type="text/plain">
+														Tambahakan tag <br> untuk membuat baris baru.
+									Contoh :
+								</script>
+													<div class="box-bordered pd-5">
+														<ul style="list-style: none; padding:0; ">
+															<li>
+																{"nama" : "Kemangi 41"} menjadi {"nama" : "Hotspot Murah"}
+															</li>
+															<li>
+																{"notifikasi" : "Mohon maaf internet Telkom dalam perbaikan."} menjadi {"notifikasi" : ""}
+															</li>
+															<li>
+																<script class="mr-b-5 mr-t-5" style="display: block;" type="text/plain">
+																	{"expired" : "Mohon maaf Kode Voucher atau User yang Anda masukkan sudah expired. <br><br> Silahkan gunakan Kode Voucher yang masih berlaku,<br> atau lakukan pembayaran untuk mengaktifkan user kembali. <br> Terima Kasih."}
+											</script>
+															</li>
+														</ul>
+													</div>
+												</div>
+												<h3>Menampilkan Expired User di Laman Status Hotspot (status.html). Tempalate hotspo4, hotspot5, hotspot6.</h3>
+												<b>Syarat : Server Mikhmon harus dalam keadaan aktif.</b><br>
+												Perhatikan protocol yang digunakan https / http.<br>
+												Untuk server local yang menggunakan PC atau Android biasanya menggunakan protocol http.<br>
+												Perhatikan pada gambar bagian yang diberi tanda <b style="border: solid 2px red;">merah</b> dan <b style="border: solid 2px lightgreen;">hijau</b></br>
+												<b style="border: solid 2px red;">Untuk Session Name</b>
+												<b style="border: solid 2px lightgreen;">domain servermikhmon / IP server Mikhmon</b> (*IP server Mikhmon
+												adalah IP PC/Android dimana Mikhmon diinstall).</br>
+												Bagi yang menggunakan Mikhmon V3, sesuaikan Session Name (lihat gambar) untuk menampilkan expired pada
+												laman status hotspot5.<br>Session Name dapat dilihat di Session Settings (Settings->Session Settings).
+												<a href="./img/session-name.png" target="_blank" title="Session Name"><img src="./img/session-name.png"
+													 class="img2"></a>
+												<a href="./img/expv3.png" target="_blank" title="Script Expired User V3"><img src="./img/expv3.png" class="img2"></a>
+												Untuk yang masih menggunkan Mikhmon V2 bisa merubah script menjadi seperti gambar berikut.
+												<a href="./img/expv2.png" target="_blank" title="Script Expired User V2"><img src="./img/expv2.png" class="img2"></a>
+												<h3>Laman Cek Status User.</h3>
+												Di Mikhmon V3 laman cek status user berubah menjadi,<br>
+												<div class="box-bordered pd-5">
+													http://ip-server-mikhmon/status/?session=SessionName
+												</div>
+												Session Name bisa dilihat gambar diatas.
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="card">
+										<div class="card-header">
+											<h3><i class="fa fa-book"></i> Penambahan QR Code Scanner</h3>
+										</div>
+										<div class="card-body">
+											<p>
+												Tambahkan button di login.html
+												<script class="mr-b-5 mr-t-5" style="display: block;" type="text/plain">
+													<button onclick="window.location='https://laksa19.github.io/myqr';">QR Code</button>
+								</script>
+												Tambahkan script berikut di MikroTik via Terminal.
+												<div class="box-bordered pd-5">
+													<script class="mr-b-5 mr-t-5" style="display: block;" type="text/plain">
+														/ip hotspot walled-garden ip
+								</script>
+													<script class="mr-b-5 mr-t-5" style="display: block;" type="text/plain">
+														add action=accept comment="Mikhmon QR Code Scanner" disabled=no dst-host=laksa19.github.io
+								</script>
+												</div>
+												QR Code Scanner hanya bisa dipakai pada browser yang memiliki hak akses kamera.<br>
+											Centang <b>HTTP PAP</b> di hotspot server profile.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div></div>
+					<div class="card-footer bg-dark">
+						Copyright © 2018 Laksamadi Guko
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+
+</body>
+
+</html>
