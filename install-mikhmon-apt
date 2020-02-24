@@ -1,6 +1,6 @@
 #bin/bash
 apt install git php -y
-git clone https://github.com/laksa19/mikhmonv3.git
+git clone https://github.com/riyadhul/mikhmonv3.git
 cat >start-mikhmon <<EOL
 #bin/bash
 cd mikhmonv3
@@ -13,7 +13,7 @@ cp ~/mikhmonv3/include/config.php ~/backup-mikhmon/config.php
 cp -rf ~/mikhmonv3/voucher/. ~/backup-mikhmon/voucher/
 cp -rf ~/mikhmonv3/img/. ~/backup-mikhmon/img/
 rm -rf mikhmonv3
-git clone https://github.com/laksa19/mikhmonv3.git
+git clone https://github.com/riyadhul/mikhmonv3.git
 cp ~/backup-mikhmon/config.php ~/mikhmonv3/include/config.php
 cp -rf ~/backup-mikhmon/voucher/. ~/mikhmonv3/voucher/
 cp -rf ~/backup-mikhmon/img/. ~/mikhmonv3/img/
