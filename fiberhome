@@ -1,3 +1,5 @@
+Link Tutor: https://www.youtube.com/watch?v=2UJGv0LljQU
+
 2020 PLDT  SUPER ADMIN USER AND PASSWORD / OPEN 4 LAN PORTS FIBER MODEM / SET UP USER AND PASSWORD WIFI
 
 DISABLE TR069 IN REMOTE MANAGEMENT FOR PERMANENT CONFIGURATION.
@@ -48,3 +50,68 @@ RP2631
 http://192.168.1.1/fh
 Username: adminpldt
 Password: z6dUABtl270qRxt7a2uGTiw
+
+==================================================================
+Software Version  RP2631
+Hardware Version  WKE2.134.285F1A
+Device Model  AN5506-04-FA
+Device Description  GPON
+ONU State  O1(STATE_INIT)
+LOID  fiberhome
+
+Link Tutor: https://www.youtube.com/watch?v=v-tNlTadSSo
+url:--http://192.168.1.1/fh
+
+Username: f~i!b@e#r$h%o^m*esuperadmin
+Password: s(f)u_h+g|u
+
+Select Debug Switch
+enable Telnet Switch and click Apply.
+enable Web Admin Switch and click Apply
+
+telnet 192.168.1.1
+
+Login: gepon
+Password: gepon
+
+
+
+type:
+enable
+
+Password: gepon
+
+cd web
+get web admin username adminpldt
+
+https://192.168.1.1/fh
+==================================================================
+Link Tutor: https://www.youtube.com/watch?v=BMK3DNIMZS0
+
+Welcome to another video! 
+
+Today, I will be showing you guys how to enable the SuperAdmin Account of PLDT and also enable the extra LAN ports of your PLDT Fibr Router model: AN5506-04. 
+
+Other routers have different admin account passwords so this might not work with yours.
+
+Here is everything needed.
+
+
+192.168.1.1/fh
+
+Regular Admin
+username: admin
+password: 1234
+
+
+Superadmin: f~i!b@e#r$h%o^m*esuperadmin
+Password: s(f)u_h+g|u
+
+
+Login 2: adminpldt
+Password: z6dUABtl270qRxt7a2uGTiw
+
+1.1.1.1
+1.0.0.1
+
+192.168.1.143
